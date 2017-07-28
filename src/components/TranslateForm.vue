@@ -1,19 +1,19 @@
 <template>
-  <div id="TranslateForm">
-      
-      <form v-on:submit="formSubmit">
-          <input type="text" v-model="textToTranslate" placeholder="Enter a word">
-          <select v-model="language">
+  <div class="row" id="TranslateForm">
+      <div class="col-md-6 col-md-offset-3">
+      <form class="well" v-on:submit="formSubmit">
+          <input class="form-control"type="text" v-model="textToTranslate" placeholder="Enter a word">
+          <select class="form-control" v-model="language">
               <option value="no">Norwegian</option>
               <option value="es">Spanish</option>
               <option value="fr">French</option>
               <option value="ru">Russian</option>
               <option value="ja">Chinese</option>
-
           </select>
-          <input type="submit" value="Translate">
+          <br>
+          <input class="btn btn-primary" type="submit" value="Translate">
       </form>
-
+    </div>
   </div>
 </template>
 
