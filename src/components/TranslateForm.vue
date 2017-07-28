@@ -11,7 +11,7 @@
               <option value="ru">Russian</option>
               <option value="zh">Chinese</option>
               <option value="ja">Japanese</option>
-              <option value="cz">Czech</option>
+              <option value="cs">Czech</option>
               <option value="sk">Slovakian</option>
               <option value="he">Hebrew</option>
 
