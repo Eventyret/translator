@@ -22,8 +22,8 @@ export default {
     }
   },
   methods: {
-    translateText:function(text){
-      this.$http.get('https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20170728T095610Z.8f73e84300b727c4.83c875c16795f0a74454dbd6dc91c384fd23de73&lang=no&text='+text)
+    translateText:function(text, language){
+      this.$http.get('https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20170728T095610Z.8f73e84300b727c4.83c875c16795f0a74454dbd6dc91c384fd23de73&lang='+language+'&text='+text)
       .then((response) => {
        this.translatedText = response.body.text[0];
       });
