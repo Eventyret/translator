@@ -4,6 +4,7 @@
   <h5>Powerd by Vue.js</h5>
   <TranslateForm v-on:formSubmit="translateText"></TranslateForm>
   <TranslateOutput v-text="translatedText"></TranslateOutput>
+  
   </div>
 </template>
 
