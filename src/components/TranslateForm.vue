@@ -2,8 +2,8 @@
   <div class="row" id="TranslateForm">
       <div class="col-md-6 col-md-offset-3">
       <form  id="transForm" class="form-inline well" v-on:submit="formSubmit">
-          <input class="form-control"type="text" v-model="textToTranslate" placeholder="Enter a word">
-          <select class="form-control" v-model="language">
+          <input class="form-control"type="text" v-model="textToTranslate" v-on:input="formSubmit" placeholder="Enter a word">
+          <select class="form-control" v-model="language" v-on:change="formSubmit">
               <option value="no">Norwegian</option>
               <option value="es">Spanish</option>
               <option value="fr">French</option>
@@ -11,7 +11,6 @@
               <option value="zh">Chinese</option>
               <option value="ja">Japanese</option>
           </select>
-          <input class="btn btn-primary" type="submit" value="Translate">
       </form>
     </div>
   </div>
@@ -42,6 +41,6 @@ export default {
 #transForm {
     border-radius: 10px;
     bordeR: 1px solid #ccc;
-  
+
 }
 </style>
