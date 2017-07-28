@@ -2,7 +2,7 @@
   <div class="row" id="TranslateForm">
       <div class="col-md-6 col-md-offset-3">
       <form  id="transForm" class="form-inline well" v-on:submit="formSubmit">
-          <input class="form-control" type="text" v-model="textToTranslate" v-on:input="formSubmit" placeholder="Input English Word">
+          <input class="form-control" type="text" v-model="textToTranslate" v-on:input="formSubmit" placeholder="English Input">
           <select class="form-control" v-model="language" v-on:change="formSubmit">
               <option value="">Translate To</option>
               <option value="no">Norwegian</option>
