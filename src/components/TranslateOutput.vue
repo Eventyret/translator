@@ -1,5 +1,5 @@
 <template>
-<h2 class="text-success">{{translatedText}}</h2>
+<h2 class="text-primary col-md-6 col-md-offset-3">{{translatedText}}</h2>
 </template>
 
 <script>
@@ -10,7 +10,5 @@ export default {
 </script>
 
 <style>
-#app {
-  
-}
+
 </style>

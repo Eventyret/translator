@@ -1,10 +1,9 @@
 <template>
   <div id="app" class="text-center">
-  <h1>Word Translator</h1>
+  <h1>Language Translator</h1>
   <h5>Powerd by Vue.js</h5>
   <TranslateForm v-on:formSubmit="translateText"></TranslateForm>
   <TranslateOutput v-text="translatedText"></TranslateOutput>
-  
   </div>
 </template>
 
